@@ -1,0 +1,38 @@
+server:
+  port: 8888
+spring:
+  # redis
+  redis:
+    host: 192.168.51.45
+    port: 6377
+    password: REJkwlj43k2j-redis#0324
+    timeout: 10s
+    lettuce:
+      pool:
+        min-idle: 10
+        max-idle: 30
+        max-active: 20
+        max-wait: -1ms
+file:
+  ip-db: D:/GeoLite2-City.mmdb
+  country-map: D:/country-map.txt
+aws:
+  access:
+    key: AKIA6HI4L4QP5DDXGEBC
+  secret:
+    key: 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
+  dns:
+    baseDomain: debreal.space
+    hostedZoneId: Z0928263TS7WYSU0BVRK
+    healthcheck:
+      port: 8545
+      page: /health
+    continent:
+      ipNum: 3
+      countries: NA:US,AS:SG,EU:DE,AF:EG,AN:GS,SA:BR,OC:AU
+w3fs:
+  enable: true
+  ip: 192.168.10.204
+  #websocket port
+  wsPort: 8646
+  address: '0x0000000000000000000000000000000000003002'
